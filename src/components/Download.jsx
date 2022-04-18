@@ -13,7 +13,7 @@ const Download = () => {
           To assist with data upload, click below to get a csv template. Please
           dont change column names (row 1)
         </p>
-        <Link to={testFile} target="_blank" download>
+        <Link to={testFile} target="_blank" download={testFile}>
           <button className="py-3 px-6 my-4 bg-violet-400 rounded-md border-none">
             Download CSV Template
           </button>

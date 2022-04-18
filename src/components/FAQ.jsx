@@ -50,6 +50,17 @@ const FAQ = () => {
               view a specific AWS Service or AWS Account.
             </p>
           </div>
+          <div>
+            <h3 className="font-bold text-lg">
+              The file downloaded from webapp is not formatted correctly. What
+              should I do?
+            </h3>
+            <p className="text-lg pt-2 pb-4">
+              Please create a new csv file with headings as
+              Date,Service,Account,Cost. The date should be in MM/DD/YYYY
+              format. Cost should be numbers.
+            </p>
+          </div>
         </div>
       </div>
     </div>

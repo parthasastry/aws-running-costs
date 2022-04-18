@@ -17,7 +17,7 @@ const Home = () => {
     const reader = new FileReader();
     reader.onload = function (e) {
       const text = e.target.result;
-      //   console.log(text);
+      console.log(text);
       processCSV(text);
     };
     reader.readAsText(file);

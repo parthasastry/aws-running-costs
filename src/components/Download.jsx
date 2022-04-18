@@ -1,13 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import { CSVLink } from "react-csv";
 
-const csvData = [
-  ["Date", "Service", "Account", "Cost"],
-  ["3/1/22", "EC2", "1000000000", 12.23],
-  ["4/1/22", "EBS", "1000000001", 45.88],
-];
+const csvData = `Date, Service, Account, Cost
+3/1/22, EC2, 1000000001, 12.23
+3/2/22, EBS, 1000000002, 99.99,
+4/2/22, Storage Gateway, 1000000003, 102.45`;
 
 const Download = () => {
   return (

@@ -9,7 +9,7 @@ const csvData = `Date, Service, Account, Cost
 
 const Download = () => {
   return (
-    <div name="download" className="py-8 mx-auto p-4">
+    <div name="download" className="py-8 mx-auto p-4 border">
       <div className="mx-auto py-12 px-12 text-center">
         <h2 className="text-3xl font-bold text-center uppercase">
           Download Template

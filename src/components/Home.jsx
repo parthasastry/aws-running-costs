@@ -1,15 +1,10 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import DisplayData from "./DisplayData";
-import ServiceChart from "./ServiceChart";
-import AccountChart from "./AccountChart";
-import MonthChart from "./MonthChart";
+
 import Download from "./Download";
 import Upload from "./Upload";
+import Dashboard from "./Dashboard";
 
 const Home = () => {
-  const data = useSelector((state) => state.data);
-
   return (
     <div name="home" className="py-24">
       <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
@@ -32,31 +27,7 @@ const Home = () => {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold text-center uppercase">
-          Visualization
-        </h2>
-        {data.length > 0 ? (
-          <div>
-            <div className="grid grid-cols-2 gap-6 p-12">
-              <div className="border">
-                <ServiceChart />
-              </div>
-              <div className="border">
-                <AccountChart />
-              </div>
-              <div className="border col-span-2">
-                <MonthChart />
-              </div>
-              <div className="border col-span-2">
-                <DisplayData />
-              </div>
-            </div>
-          </div>
-        ) : (
-          <p className="text-lg pt-2 pb-4 text-center">
-            Upload Data to visualize your AWS Running Costs
-          </p>
-        )}
+        <Dashboard />
       </div>
     </div>
   );

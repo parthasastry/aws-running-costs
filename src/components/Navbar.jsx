@@ -12,8 +12,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="p-4">
-          <Link to="download" smooth={true} duration={500}>
-            Download
+          <Link to="dashboard" smooth={true} duration={500}>
+            Visualize
           </Link>
         </li>
         <li className="p-4">
